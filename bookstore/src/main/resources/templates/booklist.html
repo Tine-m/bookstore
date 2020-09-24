@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Book store</title>
+    <link rel="stylesheet" type="text/css" href="../book.css">
+</head>
+<body>
+<p th:each="book : ${books}">
+    <span th:text="${book.title}"></span>
+    <span th:text="${book.year}"></span>
+    <span th:text="${book.ebook}"></span>
+</p>
+</body>
+</html>

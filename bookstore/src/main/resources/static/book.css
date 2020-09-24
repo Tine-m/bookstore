@@ -1,0 +1,27 @@
+html{
+    font-family: Arial;
+}
+
+h1{
+    color:rgb(255,0,255);
+}
+
+#leftAndRight{
+    display:inline-block;
+}
+
+#left{
+    float:left;
+    width:200px;
+    border: black;
+}
+
+#right{
+    float:right;
+    width:200px;
+    border: black;
+}
+
+.formRows{
+    padding-bottom:20px;
+}
