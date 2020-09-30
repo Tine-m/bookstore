@@ -5,8 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.context.request.WebRequest;
-
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -32,7 +31,7 @@ public class BookController {
     }
 
     @PostMapping("/addToList")
-    public String bookList(WebRequest request) {
+    public String bookList(HttpServletRequest request) {
         String param1 = request.getParameter("title");
         String param2 = request.getParameter("year");
         String param3 = request.getParameter("ebook");
